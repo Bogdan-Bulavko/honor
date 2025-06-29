@@ -6,6 +6,7 @@ import RibbonTitle from './components/RibbonTitle.vue'
 <template>
   <PageVerification />
   <RibbonTitle />
+  <div></div>
 </template>
 
 <style scoped></style>
