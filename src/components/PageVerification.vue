@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import RibbonTitle from './RibbonTitle.vue'
+</script>
 
 <template>
   <form class="w-[300px] m-auto mt-50 mb-30 p-5 bg-white rounded-2xl">
@@ -11,6 +13,8 @@
       </div>
     </div>
   </form>
+
+  <RibbonTitle />
 </template>
 
 <style scoped></style>

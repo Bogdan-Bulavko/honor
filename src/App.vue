@@ -1,11 +1,10 @@
 <script setup lang="ts">
+import HomePage from './components/HomePage.vue'
 import PageVerification from './components/PageVerification.vue'
-import RibbonTitle from './components/RibbonTitle.vue'
 </script>
 
 <template>
-  <PageVerification />
-  <RibbonTitle />
+  <HomePage />
 </template>
 
 <style scoped></style>
