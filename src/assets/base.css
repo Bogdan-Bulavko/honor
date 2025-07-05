@@ -3,5 +3,7 @@
 @theme {
   --color-honor-blue: rgb(0 103 177);
   --color-honor-btn: rgb(13 162 231);
+  --color-primary-btn: rgb(13 162 231 / 90%);
+  --color-honor-darkBlue: rgb(0 79 138);
   --color-honor-gray: rgb(245 245 247);
 }
