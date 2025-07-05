@@ -9,7 +9,7 @@ import FooterPage from './FooterPage.vue'
 </script>
 
 <template>
-  <HeaderHome />
+  <!-- <HeaderHome /> -->
   <OfferHome />
   <ProjectOpportunities />
   <HowItWorksHome />
