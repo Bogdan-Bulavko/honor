@@ -12,11 +12,15 @@
         </p>
         <div class="flex gap-5 max-lg:flex-col">
           <a href="#" class="w-full"
-            ><button class="min-w-full p-3 rounded-xl bg-white text-honor-blue">
+            ><button
+              class="min-w-full p-3 rounded-xl bg-white hover:bg-gray-100 transition-colors text-honor-blue"
+            >
               Для избирателей
             </button></a
           ><a href="#" class="w-full"
-            ><button class="min-w-full p-3 rounded-xl text-white bg-honor-blue border border-white">
+            ><button
+              class="min-w-full p-3 rounded-xl text-white bg-honor-blue hover:bg-white/30 transition-colors border border-white"
+            >
               Для представителей власти
             </button></a
           >
