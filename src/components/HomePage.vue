@@ -5,6 +5,7 @@ import ProjectOpportunities from './ProjectOpportunities.vue'
 import HowItWorksHome from './HowItWorksHome.vue'
 import ProjectStatistic from './ProjectStatistic.vue'
 import RecentActivity from './RecentActivity.vue'
+import FooterPage from './FooterPage.vue'
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import RecentActivity from './RecentActivity.vue'
   <HowItWorksHome />
   <ProjectStatistic />
   <RecentActivity />
+  <FooterPage />
 </template>
 
 <style scoped></style>
