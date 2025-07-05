@@ -75,7 +75,7 @@
         </button>
         <a
           href="#"
-          class="ml-4 text-white rounded-md bg-honor-btn text-sm hover:bg-primary-btn transition-colors"
+          class="ml-4 text-white rounded-md bg-honor-btn text-sm hover:bg-honor-btn/90 transition-colors"
         >
           <button class="flex items-center gap-2 py-2 px-4">
             <svg
