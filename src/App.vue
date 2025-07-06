@@ -4,7 +4,8 @@ import PageVerification from './components/PageVerification.vue'
 </script>
 
 <template>
-  <HomePage />
+  <!-- <HomePage /> -->
+  <PageVerification />
 </template>
 
 <style scoped></style>
