@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router'
 <template>
   <header class="bg-white shadow-sm p-4">
     <div class="flex justify-between items-center max-w-[1280px] m-auto">
-      <RouterLink to="/" class="text-2xl font-bold text-honor-blue whitespace-nowrap"
+      <RouterLink to="/honor/" class="text-2xl font-bold text-honor-blue whitespace-nowrap"
         >Честь</RouterLink
       >
       <nav class="max-sm:hidden">
@@ -78,7 +78,7 @@ import { RouterLink } from 'vue-router'
           </svg>
         </button>
         <RouterLink
-          to="/verification"
+          to="/honor/verification"
           class="ml-4 text-white rounded-md bg-honor-btn text-sm hover:bg-honor-btn/90 transition-colors"
         >
           <button class="flex items-center gap-2 py-2 px-4">

@@ -2,19 +2,19 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import { createMemoryHistory, createRouter } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 
 import HomePage from './components/HomePage.vue'
 import PageVerification from './components/PageVerification.vue'
 
 const routes = [
-  { path: '/', component: HomePage },
-  { path: '/verification', component: PageVerification },
+  { path: '/honor/', component: HomePage },
+  { path: '/honor/verification/', component: PageVerification },
 ]
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(),
   routes,
 })
 
