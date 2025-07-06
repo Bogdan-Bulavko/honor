@@ -1,9 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouterLink } from 'vue-router'
+</script>
 
 <template>
   <header class="bg-white shadow-sm p-4">
     <div class="flex justify-between items-center max-w-[1280px] m-auto">
-      <a href="#" class="text-2xl font-bold text-honor-blue whitespace-nowrap">Честь</a>
+      <RouterLink to="/" class="text-2xl font-bold text-honor-blue whitespace-nowrap"
+        >Честь</RouterLink
+      >
       <nav class="max-sm:hidden">
         <ul class="flex">
           <li>
@@ -73,8 +77,8 @@
             <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
           </svg>
         </button>
-        <a
-          href="#"
+        <RouterLink
+          to="/verification"
           class="ml-4 text-white rounded-md bg-honor-btn text-sm hover:bg-honor-btn/90 transition-colors"
         >
           <button class="flex items-center gap-2 py-2 px-4">
@@ -96,7 +100,7 @@
             </svg>
             <span>Логин</span>
           </button>
-        </a>
+        </RouterLink>
       </div>
     </div>
   </header>

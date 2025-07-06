@@ -1,11 +1,16 @@
 <script setup lang="ts">
-import HomePage from './components/HomePage.vue'
-import PageVerification from './components/PageVerification.vue'
+import { RouterView } from 'vue-router'
+
+import HeaderHome from './components/HeaderHome.vue'
+import FooterPage from './components/FooterPage.vue'
 </script>
 
 <template>
-  <HomePage />
-  <PageVerification />
+  <HeaderHome />
+  <main>
+    <RouterView />
+  </main>
+  <FooterPage />
 </template>
 
 <style scoped></style>
