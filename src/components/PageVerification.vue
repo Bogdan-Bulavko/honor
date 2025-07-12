@@ -1,18 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <!-- <form class="w-[300px] m-auto mt-50 mb-30 p-5 bg-white rounded-2xl">
-    <div class="flex flex-col items-center">
-      <h1 class="text-center mb-5 text-2xl">Подвердите данные</h1>
-      <div class="w-[250px] flex flex-col">
-        <label class="mb-2"> Ваша почта: </label>
-        <input type="email" class="mb-3 px-1 border rounded" />
-        <button class="bg-blue-500 text-white p-2 rounded-2xl">Отправить данные</button>
-      </div>
-    </div>
-  </form> -->
-
-  <section class="py-12 p-4 bg-gray-50">
+  <section class="py-12 p-4 bg-gray-50 dark:bg-blue-950/90 dark:text-white">
     <div class="max-w-[1280px] m-auto">
       <div class="max-w-[450px] m-auto">
         <h2 class="mb-8 text-3xl font-bold text-center">Вход в систему</h2>
@@ -63,10 +52,10 @@
         </div>
         <div class="flex items-center mb-6">
           <div class="border-b border-gray-300 h-1 w-full"></div>
-          <span class="px-4 t items-centerext-sm text-gray-500">или</span>
+          <span class="px-4 t items-centerext-sm text-gray-500 dark:text-white">или</span>
           <div class="border-b border-gray-300 h-1 w-full"></div>
         </div>
-        <form class="w-full mb-8 p-6 bg-white border border-gray-300 rounded-md">
+        <form class="w-full mb-8 p-6 bg-white border border-gray-300 rounded-md dark:bg-honor-blue">
           <label class="block text-sm font-medium mb-2">Электронная почта или телефон</label>
           <div class="relative mb-6">
             <svg
@@ -79,7 +68,7 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="lucide lucide-mail absolute left-3 top-1/2 transform -translate-y-1/2 text-honor-darkGray"
+              class="absolute left-3 top-1/2 transform -translate-y-1/2 dark:text-honor-blue"
             >
               <rect width="20" height="16" x="2" y="4" rx="2"></rect>
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
@@ -87,13 +76,15 @@
             <input
               type="mail"
               placeholder="example@mail.ru"
-              class="w-full py-2 pl-10 px-3 border border-gray-300 rounded-md focus:border-honor-btn focus:border-2 focus:outline-none"
+              class="w-full py-2 pl-10 px-3 border border-gray-300 rounded-md focus:border-honor-btn focus:border-2 focus:outline-none bg-white text-black"
             />
           </div>
           <div class="flex justify-between">
             <label class="block text-sm font-medium mb-2">Пароль</label>
 
-            <a class="text-sm text-honor-blue hover:underline" href="#">Забыли пароль?</a>
+            <a class="text-sm text-honor-blue hover:underline dark:text-white" href="#"
+              >Забыли пароль?</a
+            >
           </div>
           <div class="relative mb-6">
             <svg
@@ -106,7 +97,7 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="lucide lucide-lock absolute left-3 top-1/2 transform -translate-y-1/2 text-honor-darkGray"
+              class="absolute left-3 top-1/2 transform -translate-y-1/2 dark:text-honor-blue"
             >
               <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
               <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
@@ -114,16 +105,20 @@
             <input
               type="password"
               placeholder="••••••••"
-              class="w-full py-2 pl-10 px-3 border border-gray-300 rounded-md focus:border-honor-btn focus:border-2 focus:outline-none"
+              class="w-full py-2 pl-10 px-3 border border-gray-300 rounded-md focus:border-honor-btn focus:border-2 focus:outline-none bg-white text-black"
             />
           </div>
-          <button class="w-full py-2 rounded-md text-white bg-honor-btn">Войти</button>
+          <button
+            class="w-full py-2 rounded-md text-white bg-honor-btn transition-colors dark:hover:bg-blue-500"
+          >
+            Войти
+          </button>
         </form>
         <div class="flex flex-col gap-3 mb-6 m-auto text-white text-sm">
           <div class="mb-6 text-center">
-            <p class="text-gray-500">
+            <p class="text-gray-500 dark:text-white">
               Еще не зарегистрированы?
-              <a class="text-honor-blue hover:underline" href="#">Регистрация</a>
+              <a class="text-honor-blue hover:underline dark:text-white" href="#">Регистрация</a>
             </p>
           </div>
           <button class="block py-2 rounded-md bg-honor-blue">
