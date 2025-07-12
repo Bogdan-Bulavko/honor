@@ -6,7 +6,7 @@ export const useSwitchThemeStore = defineStore('switchTheme', () => {
   const switchThemeBoolean: Ref<boolean> = ref(false)
 
   const onSwitchTheme = () => {
-    const html = document.getElementsByTagName('html')[0]
+    const html: HTMLHtmlElement = document.getElementsByTagName('html')[0]
     switchThemeBoolean.value = !switchThemeBoolean.value
 
     if (switchThemeBoolean.value) {
