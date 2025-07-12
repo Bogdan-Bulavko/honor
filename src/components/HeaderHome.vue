@@ -3,12 +3,14 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <header class="bg-white shadow-sm p-4">
+  <header class="bg-white dark:bg-blue-950 shadow-sm p-4">
     <div class="flex justify-between items-center max-w-[1280px] m-auto">
-      <RouterLink to="/honor/" class="text-2xl font-bold text-honor-blue whitespace-nowrap"
+      <RouterLink
+        to="/honor/"
+        class="text-2xl font-bold text-honor-blue dark:text-white dark:hover:text-honor-blue dark:transition-colors"
         >Честь</RouterLink
       >
-      <nav class="max-sm:hidden">
+      <nav class="max-sm:hidden dark:text-white">
         <ul class="flex">
           <li>
             <a
@@ -36,7 +38,7 @@ import { RouterLink } from 'vue-router'
       <div class="flex items-center">
         <a
           href="#"
-          class="flex items-center ml-4 px-3 py-1 rounded-full bg-honor-gray hover:bg-honor-blue/10 transition-colors text-sm"
+          class="flex items-center ml-4 px-3 py-1 rounded-full bg-honor-gray hover:bg-honor-blue/10 transition-colors text-sm dark:text-white dark:bg-honor-blue dark:hover:bg-blue-500"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -47,7 +49,7 @@ import { RouterLink } from 'vue-router'
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-ticket text-honor-blue mr-1"
+            class="lucide text-honor-blue dark:text-white mr-1"
           >
             <path
               d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"
@@ -59,7 +61,7 @@ import { RouterLink } from 'vue-router'
           35</a
         >
         <button
-          class="flex items-center justify-around ml-4 rounded-md hover:bg-honor-gray h-10 w-10 transition-colors text-sm"
+          class="flex items-center justify-around ml-4 rounded-md hover:bg-honor-gray h-10 w-10 transition-colors text-sm dark:text-white dark:bg-honor-blue dark:hover:bg-blue-500"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +73,6 @@ import { RouterLink } from 'vue-router'
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-bell"
           >
             <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
             <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
@@ -79,7 +80,7 @@ import { RouterLink } from 'vue-router'
         </button>
         <RouterLink
           to="/honor/verification"
-          class="ml-4 text-white rounded-md bg-honor-btn text-sm hover:bg-honor-btn/90 transition-colors"
+          class="ml-4 text-white rounded-md bg-honor-btn text-sm hover:bg-honor-btn/90 transition-colors dark:bg-honor-blue dark:hover:bg-blue-500"
         >
           <button class="flex items-center gap-2 py-2 px-4">
             <svg

@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main class="bg-gradient-to-r from-honor-blue to-honor-darkBlue text-white py-16 p-4">
+  <main class="py-16 p-4 bg-gradient-to-r from-honor-blue to-honor-darkBlue text-white">
     <div
       class="flex items-center justify-between max-lg:justify-center gap-12 max-w-[1280px] m-auto"
     >
