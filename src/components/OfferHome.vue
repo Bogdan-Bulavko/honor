@@ -13,7 +13,7 @@
         <div class="flex gap-5 max-lg:flex-col">
           <a href="#" class="w-full"
             ><button
-              class="min-w-full p-3 rounded-xl bg-white hover:bg-gray-100 transition-colors text-honor-blue"
+              class="min-w-full p-3 rounded-xl bg-white hover:bg-gray-100 transition-colors text-honor-blue dark:bg-honor-blue dark:text-white dark:border dark:border-white dark:hover:bg-white/30"
             >
               Для избирателей
             </button></a
