@@ -35,15 +35,17 @@ const data = [
 </script>
 
 <template>
-  <section class="py-16 p-4 bg-gray-50">
+  <section class="py-16 p-4 bg-gray-50 dark:bg-blue-950/90">
     <div class="max-w-[1280px] m-auto">
-      <h2 class="mb-12 text-3xl font-bold text-center">Возможности платформы</h2>
+      <h2 class="mb-12 text-3xl font-bold text-center dark:text-white">Возможности платформы</h2>
       <div class="flex flex-wrap justify-center gap-8">
         <div v-for="card in data">
           <a href="#" class="block transition-transform hover:scale-105">
-            <div class="p-6 max-w-[400px] min-h-[240px] bg-white border border-gray-300 rounded-lg">
+            <div
+              class="p-6 max-w-[400px] min-h-[240px] bg-white border border-gray-300 rounded-lg dark:bg-honor-blue"
+            >
               <div
-                class="bg-honor-blue/10 rounded-full p-4 w-16 h-16 flex items-center justify-center mb-4"
+                class="bg-honor-blue/10 rounded-full p-4 w-16 h-16 flex items-center justify-center mb-4 dark:bg-gray-300"
               >
                 <svg
                   :xmlns="card.img"
@@ -63,8 +65,8 @@ const data = [
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
               </div>
-              <h3 class="font-bold text-xl mb-2">{{ card.title }}</h3>
-              <p class="text-gray-500">
+              <h3 class="font-bold text-xl mb-2 dark:text-white">{{ card.title }}</h3>
+              <p class="text-gray-500 dark:text-white">
                 {{ card.text }}
               </p>
             </div>

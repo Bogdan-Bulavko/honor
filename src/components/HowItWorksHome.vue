@@ -1,10 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="py-16 p-4 bg-gray-50">
+  <section class="py-16 p-4 bg-gray-50 dark:bg-blue-950 dark:text-white">
     <div class="max-w-[1280px] m-auto">
       <h2 class="mb-12 text-3xl font-bold text-center">Как это работает</h2>
-      <p class="mb-12 text-gray-500 text-center">
+      <p class="mb-12 text-gray-500 text-center dark:text-white">
         Простой процесс взаимодействия избирателей и представителей власти
       </p>
       <div class="flex gap-5 max-md:flex-col mb-12">
@@ -27,7 +27,7 @@
             </svg>
           </div>
           <h3 class="font-bold text-xl mb-2">Шаг 1</h3>
-          <p class="text-gray-500">
+          <p class="text-gray-500 dark:text-white">
             Зарегистрируйтесь на платформе как избиратель или представитель власти
           </p>
         </div>
@@ -52,7 +52,9 @@
             </svg>
           </div>
           <h3 class="font-bold text-xl mb-2">Шаг 2</h3>
-          <p class="text-gray-500">Найдите свой избирательный округ на интерактивной карте</p>
+          <p class="text-gray-500 dark:text-white">
+            Найдите свой избирательный округ на интерактивной карте
+          </p>
         </div>
         <div class="flex flex-col items-center text-center">
           <div class="bg-gray-100 rounded-full p-6 w-32 h-32 flex items-center justify-center mb-4">
@@ -72,14 +74,14 @@
             </svg>
           </div>
           <h3 class="font-bold text-xl mb-2">Шаг 3</h3>
-          <p class="text-gray-500">
+          <p class="text-gray-500 dark:text-white">
             Создавайте задания, общайтесь с представителями и отслеживайте результаты
           </p>
         </div>
       </div>
       <a href="#" class="block">
         <button
-          class="block m-auto py-2 px-8 text-lg text-white font-bold rounded-md bg-honor-btn hover:bg-honor-btn/90 transition-colors"
+          class="block m-auto py-2 px-8 text-lg text-white font-bold rounded-md bg-honor-btn hover:bg-honor-btn/90 transition-colors dark:bg-honor-blue dark:hover:bg-blue-500"
         >
           Начать пользоваться платформой
         </button>
