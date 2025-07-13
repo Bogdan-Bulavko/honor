@@ -5,8 +5,8 @@ import { createPinia } from 'pinia'
 import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 
-import HomePage from './components/HomePage.vue'
-import PageVerification from './components/PageVerification.vue'
+import HomePage from './views/HomePage.vue'
+import PageVerification from './views/PageVerification.vue'
 
 const routes = [
   { path: '/honor/', component: HomePage },

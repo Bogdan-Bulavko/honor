@@ -17,7 +17,7 @@ const { onSwitchTheme } = storeDarktheme
       <RouterLink
         to="/honor/"
         class="text-2xl font-bold text-honor-blue dark:text-white dark:hover:text-honor-blue dark:transition-colors"
-        >Честь</RouterLink
+        >Мониториум</RouterLink
       >
       <nav class="max-sm:hidden dark:text-white">
         <ul class="flex">

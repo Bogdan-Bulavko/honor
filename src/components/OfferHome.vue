@@ -14,7 +14,7 @@
         class="flex items-center justify-between max-lg:justify-center gap-12 max-w-[1280px] m-auto"
       >
         <div class="max-w-[600px] max-lg:text-center">
-          <h1 class="text-4xl font-bold mb-6">Платформа «Честь»</h1>
+          <h1 class="text-4xl font-bold mb-6">Платформа "Мониториум"</h1>
           <p class="text-lg mb-8">
             Цифровая платформа для прямого взаимодействия между избирателями и представителями
             власти
