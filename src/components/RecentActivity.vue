@@ -1,7 +1,29 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { onMounted, useTemplateRef, type Ref, ref } from 'vue'
+
+const activeClass: Ref<boolean> = ref(true)
+
+const section = useTemplateRef('recent-activity')
+
+onMounted(() => {
+  window.addEventListener('scroll', () => {
+    const rect = section.value?.getBoundingClientRect() as DOMRect
+
+    const heightWindow = document.documentElement.clientHeight
+
+    if (rect.top - heightWindow < -100) {
+      activeClass.value = false
+    }
+  })
+})
+</script>
 
 <template>
-  <section class="py-16 p-4 bg-gray-50 dark:bg-blue-950 dark:text-white">
+  <section
+    class="py-16 p-4 bg-gray-50 dark:bg-blue-950 dark:text-white duration-3000"
+    :class="{ 'opacity-0': activeClass }"
+    ref="recent-activity"
+  >
     <div class="max-w-[1280px] m-auto">
       <h2 class="mb-12 text-3xl font-bold text-center">Недавняя активность</h2>
       <div class="flex max-md:flex-col justify-between gap-8">

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { onMounted, useTemplateRef, type Ref, ref } from 'vue'
+
 const data = [
   {
     img: 'http://www.w3.org/2000/svg',
@@ -32,10 +34,30 @@ const data = [
     text: 'Рейтинговая система для представителей власти на основе активности и качества выполнения заданий',
   },
 ]
+
+const activeClass: Ref<boolean> = ref(true)
+
+const section = useTemplateRef('opportunities')
+
+onMounted(() => {
+  window.addEventListener('scroll', (e) => {
+    const rect = section.value?.getBoundingClientRect() as DOMRect
+
+    const heightWindow = document.documentElement.clientHeight
+
+    if (rect.top - heightWindow < -100) {
+      activeClass.value = false
+    }
+  })
+})
 </script>
 
 <template>
-  <section class="py-16 p-4 bg-gray-50 dark:bg-blue-950/90">
+  <section
+    class="py-16 p-4 bg-gray-50 dark:bg-blue-950/90 duration-3000"
+    :class="{ 'opacity-0': activeClass }"
+    ref="opportunities"
+  >
     <div class="max-w-[1280px] m-auto">
       <h2 class="mb-12 text-3xl font-bold text-center dark:text-white">Возможности платформы</h2>
       <div class="flex flex-wrap justify-center gap-8">

@@ -1,7 +1,29 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { onMounted, useTemplateRef, type Ref, ref } from 'vue'
+
+const activeClass: Ref<boolean> = ref(true)
+
+const section = useTemplateRef('project-statistic')
+
+onMounted(() => {
+  window.addEventListener('scroll', () => {
+    const rect = section.value?.getBoundingClientRect() as DOMRect
+
+    const heightWindow = document.documentElement.clientHeight
+
+    if (rect.top - heightWindow < -100) {
+      activeClass.value = false
+    }
+  })
+})
+</script>
 
 <template>
-  <section class="py-16 p-4 bg-honor-blue/5 dark:bg-blue-950/90">
+  <section
+    class="py-16 p-4 bg-honor-blue/5 dark:bg-blue-950/90 duration-3000"
+    :class="{ 'opacity-0': activeClass }"
+    ref="project-statistic"
+  >
     <div class="max-w-[1280px] m-auto">
       <h2 class="mb-12 text-3xl font-bold text-center dark:text-white">Статистика платформы</h2>
       <p class="mb-12 text-gray-500 text-center dark:text-white">

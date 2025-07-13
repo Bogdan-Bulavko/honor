@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
 
-import { useSwitchThemeStore } from '@/stores/darkTheme'
+import { useSwitchThemeStore } from '@/stores/darkThemeStore'
 import { computed } from 'vue'
 
 const storeDarktheme = useSwitchThemeStore()
@@ -111,7 +111,7 @@ const { onSwitchTheme } = storeDarktheme
             <span>Логин</span>
           </button>
         </RouterLink>
-        <div @click="onSwitchTheme" class="ml-3 overflow-hidden">
+        <div @click="onSwitchTheme" class="ml-2 overflow-hidden">
           <Transition
             enter-active-class="duration-1000 -translate-y-[50px]"
             enter-to-class="duration-1000 translate-y-[-10px]"
