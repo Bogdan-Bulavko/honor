@@ -7,10 +7,12 @@ import App from './App.vue'
 
 import HomePage from './views/HomePage.vue'
 import PageVerification from './views/PageVerification.vue'
+import DashBoardPage from './views/DashBoardPage.vue'
 
 const routes = [
   { path: '/honor/', component: HomePage },
   { path: '/honor/verification/', component: PageVerification },
+  { path: '/honor/dashboard/', component: DashBoardPage },
 ]
 
 const router = createRouter({

@@ -54,7 +54,7 @@ onMounted(() => {
 
 <template>
   <section
-    class="py-16 p-4 bg-gray-50 dark:bg-blue-950/90 duration-2500"
+    class="py-16 p-4 bg-honor-blue/5 dark:bg-blue-950/90 duration-2500"
     :class="{ 'opacity-0': activeClass }"
     ref="opportunities"
   >

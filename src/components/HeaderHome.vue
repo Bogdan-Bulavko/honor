@@ -37,6 +37,13 @@ const { onSwitchTheme } = storeDarktheme
               >
             </li>
             <li class="ml-6">
+              <RouterLink
+                to="/honor/dashboard/"
+                class="flex items-center space-x-1 text-honor-text hover:text-honor-blue transition-colors"
+                >Личный кабинет</RouterLink
+              >
+            </li>
+            <li class="ml-6">
               <a
                 href="#"
                 class="flex items-center space-x-1 text-honor-text hover:text-honor-blue transition-colors"
