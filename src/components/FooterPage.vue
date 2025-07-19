@@ -14,6 +14,13 @@
           <h3 class="mb-4 text-lg font-bold">Для избирателей</h3>
           <ul class="text-gray-500">
             <li class="mb-2">
+              <RouterLink
+                to="/honor/dashboard/"
+                class="text-honor-text hover:text-honor-blue transition-colors"
+                >Личный кабинет</RouterLink
+              >
+            </li>
+            <li class="mb-2">
               <a href="#" class="text-honor-text hover:text-honor-blue transition-colors"
                 >Регистрация</a
               >
