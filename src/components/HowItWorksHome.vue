@@ -20,7 +20,7 @@ onMounted(() => {
 
 <template>
   <section
-    class="py-16 p-4 bg-gray-50 dark:bg-blue-950 dark:text-white overflow-hidden duration-3000"
+    class="py-16 p-4 bg-gray-50 dark:bg-blue-950 dark:text-white overflow-hidden duration-2500"
     :class="{ 'opacity-0': activeClass }"
     ref="how-it-work"
   >

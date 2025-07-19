@@ -5,7 +5,7 @@
     <div class="max-w-[1280px] m-auto">
       <div class="grid grid-cols-4 max-lg:grid-cols-2 max-sm:grid-cols-1">
         <div>
-          <h3 class="mb-4 text-lg font-bold">Платформа «Честь»</h3>
+          <h3 class="mb-4 text-lg font-bold">Платформа «Мониториум»</h3>
           <p class="text-gray-500 mb-2">
             Цифровая платформа взаимодействия между гражданами и представителями власти
           </p>
