@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import HeaderHome from './components/HeaderHome.vue'
-import FooterPage from './components/FooterPage.vue'
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <HeaderHome />
+  <Header />
   <main>
     <RouterView />
   </main>
-  <FooterPage />
+  <Footer />
 </template>
 
 <style scoped></style>

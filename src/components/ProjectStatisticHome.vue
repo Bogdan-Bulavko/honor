@@ -27,7 +27,7 @@ onMounted(() => {
     <div class="max-w-[1280px] m-auto">
       <h2 class="mb-12 text-3xl font-bold text-center dark:text-white">Статистика платформы</h2>
       <p class="mb-12 text-gray-500 text-center dark:text-white">
-        Актуальные данные о работе платформы «Честь»
+        Актуальные данные о работе платформы «Мониториум»
       </p>
       <div class="flex gap-5 flex-wrap justify-center text-center">
         <div

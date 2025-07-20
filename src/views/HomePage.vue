@@ -1,17 +1,17 @@
 <script setup lang="ts">
 import HowItWorksHome from '@/components/HowItWorksHome.vue'
 import OfferHome from '@/components/OfferHome.vue'
-import ProjectOpportunities from '@/components/ProjectOpportunities.vue'
-import ProjectStatistic from '@/components/ProjectStatistic.vue'
-import RecentActivity from '@/components/RecentActivity.vue'
+import ProjectOpportunitiesHome from '@/components/ProjectOpportunitiesHome.vue'
+import ProjectStatisticHome from '@/components/ProjectStatisticHome.vue'
+import RecentActivityHome from '@/components/RecentActivityHome.vue'
 </script>
 
 <template>
   <OfferHome />
-  <ProjectOpportunities />
+  <ProjectOpportunitiesHome />
   <HowItWorksHome />
-  <ProjectStatistic />
-  <RecentActivity />
+  <ProjectStatisticHome />
+  <RecentActivityHome />
 </template>
 
 <style scoped></style>
