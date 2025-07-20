@@ -85,6 +85,16 @@
         </div>
       </li>
     </ul>
+    <div class="text-center">
+      <a
+        href="#"
+        class="inline-block m-auto text-sm text-white rounded-md bg-honor-btn hover:bg-honor-btn/90 transition-colors"
+      >
+        <button class="m-auto flex items-center gap-2 justify-center py-2 px-4">
+          Найти больше представителей
+        </button></a
+      >
+    </div>
   </section>
 </template>
 
