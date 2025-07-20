@@ -4,7 +4,7 @@ import { onMounted, useTemplateRef, type Ref, ref } from 'vue'
 const data = [
   {
     img: 'http://www.w3.org/2000/svg',
-    title: 'Карта Округов',
+    title: 'Карта округов',
     text: 'Интерактивная карта избирательных округов с информацией о представителях и активных заданиях',
   },
   {
