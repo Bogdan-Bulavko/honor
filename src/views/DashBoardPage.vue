@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import NotificationsBlockDashBoard from '@/components/NotificationsBlockDashBoard.vue'
+import RibbonTitleDashBoard from '@/components/RibbonTitleDashBoard.vue'
 import SubscriptionsBlockDashBoard from '@/components/SubscriptionsBlockDashBoard.vue'
 import TasksBlockDashBoard from '@/components/TasksBlockDashBoard.vue'
 import type { Ref } from 'vue'
@@ -157,7 +158,7 @@ const onActiveBlock = (value: string): void => {
                   ></path>
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
-                <span>Создать задание</span>
+                <span>Открыть карту округов</span>
               </button></a
             >
             <a
@@ -195,8 +196,27 @@ const onActiveBlock = (value: string): void => {
                 'dark:bg-honor-blue': activeBlock === 'tasks',
               }"
             >
-              <button class="cursor-pointer" @click="() => onActiveBlock('tasks')">
-                Мои задания
+              <button
+                class="cursor-pointer flex items-center gap-1"
+                @click="() => onActiveBlock('tasks')"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-5 text-honor-blue dark:text-white"
+                >
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <polyline points="16 14 18 16 22 12"></polyline>
+                  <line x1="6" y1="12" x2="10" y2="12"></line>
+                  <line x1="6" y1="16" x2="14" y2="16"></line>
+                </svg>
+                <span class="max-md:hidden">Мои задания</span>
               </button>
             </li>
             <li
@@ -206,8 +226,33 @@ const onActiveBlock = (value: string): void => {
                 'dark:bg-honor-blue': activeBlock === 'notifications',
               }"
             >
-              <button class="cursor-pointer" @click="() => onActiveBlock('notifications')">
-                Уведомления
+              <button
+                class="cursor-pointer flex items-center gap-1"
+                @click="() => onActiveBlock('notifications')"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  data-v-inspector="src/components/Header.vue:83:13"
+                  class="w-5 text-honor-blue dark:text-white"
+                >
+                  <path
+                    d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"
+                    data-v-inspector="src/components/Header.vue:94:15"
+                  ></path>
+                  <path
+                    d="M10.3 21a1.94 1.94 0 0 0 3.4 0"
+                    data-v-inspector="src/components/Header.vue:95:15"
+                  ></path>
+                </svg>
+                <span class="max-md:hidden">Уведомления</span>
               </button>
             </li>
             <li
@@ -217,8 +262,65 @@ const onActiveBlock = (value: string): void => {
                 'dark:bg-honor-blue': activeBlock === 'subscriptions',
               }"
             >
-              <button class="cursor-pointer" @click="() => onActiveBlock('subscriptions')">
-                Подписки
+              <button
+                class="cursor-pointer flex items-center gap-1"
+                @click="() => onActiveBlock('subscriptions')"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-8 text-honor-blue dark:text-white"
+                >
+                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+
+                  <line x1="19" y1="7" x2="24" y2="7" stroke-width="2.2" />
+                  <line x1="21.5" y1="4.5" x2="21.5" y2="9.5" stroke-width="2.2" />
+                </svg>
+                <span class="max-md:hidden"> Подписки </span>
+              </button>
+            </li>
+            <li
+              class="py-1 px-3 rounded-md"
+              :class="{
+                'bg-white': activeBlock === 'ribbon-title',
+                'dark:bg-honor-blue': activeBlock === 'ribbon-title',
+              }"
+            >
+              <button
+                class="cursor-pointer flex items-center gap-1"
+                @click="() => onActiveBlock('ribbon-title')"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-6 text-honor-blue dark:text-white"
+                >
+                  <!-- Лист бумаги (тело ленты) -->
+                  <rect width="18" height="14" x="3" y="4" rx="2" />
+                  <!-- Верхняя полоса — шапка газеты -->
+                  <line x1="7" y1="8" x2="17" y2="8" />
+                  <!-- Колонки текста -->
+                  <line x1="7" y1="12" x2="12" y2="12" />
+                  <line x1="7" y1="16" x2="16" y2="16" />
+                  <!-- Маленькая "статья" справа (как в ленте) -->
+                  <rect x="16" y="12" width="4" height="3" rx="1" />
+                </svg>
+                <span class="max-md:hidden"> Лента новостей </span>
               </button>
             </li>
           </ul>
@@ -230,6 +332,7 @@ const onActiveBlock = (value: string): void => {
         <SubscriptionsBlockDashBoard
           v-if="activeBlock === 'subscriptions'"
         ></SubscriptionsBlockDashBoard>
+        <RibbonTitleDashBoard v-if="activeBlock === 'ribbon-title'"></RibbonTitleDashBoard>
       </div>
     </div>
   </main>

@@ -83,7 +83,9 @@
           class="flex justify-between pt-3 border-t border-gray-300 text-gray-500 max-sm:flex-col-reverse dark:text-white"
         >
           <div class="flex gap-2">
-            <div class="flex items-center gap-1">
+            <div
+              class="flex items-center gap-1 hover:text-red-500 dark:hover:text-red-400 transition cursor-pointer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -102,7 +104,9 @@
               </svg>
               <span>56</span>
             </div>
-            <div class="flex items-center gap-1">
+            <div
+              class="flex items-center gap-1 hover:text-blue-500 dark:hover:text-blue-400 transition cursor-pointer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -195,7 +199,9 @@
           class="flex justify-between pt-3 border-t border-gray-300 text-gray-500 max-sm:flex-col-reverse dark:text-white"
         >
           <div class="flex gap-2">
-            <div class="flex items-center gap-1">
+            <div
+              class="flex items-center gap-1 hover:text-red-500 dark:hover:text-red-400 transition cursor-pointer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -214,7 +220,9 @@
               </svg>
               <span>56</span>
             </div>
-            <div class="flex items-center gap-1">
+            <div
+              class="flex items-center gap-1 hover:text-blue-500 dark:hover:text-blue-400 transition cursor-pointer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -307,7 +315,9 @@
           class="flex justify-between pt-3 border-t border-gray-300 text-gray-500 max-sm:flex-col-reverse dark:text-white"
         >
           <div class="flex gap-2">
-            <div class="flex items-center gap-1">
+            <div
+              class="flex items-center gap-1 hover:text-red-500 dark:hover:text-red-400 transition cursor-pointer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -326,7 +336,9 @@
               </svg>
               <span>56</span>
             </div>
-            <div class="flex items-center gap-1">
+            <div
+              class="flex items-center gap-1 hover:text-blue-500 dark:hover:text-blue-400 transition cursor-pointer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -419,7 +431,9 @@
           class="flex justify-between pt-3 border-t border-gray-300 text-gray-500 max-sm:flex-col-reverse dark:text-white"
         >
           <div class="flex gap-2">
-            <div class="flex items-center gap-1">
+            <div
+              class="flex items-center gap-1 hover:text-red-500 dark:hover:text-red-400 transition cursor-pointer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -438,7 +452,9 @@
               </svg>
               <span>56</span>
             </div>
-            <div class="flex items-center gap-1">
+            <div
+              class="flex items-center gap-1 hover:text-blue-500 dark:hover:text-blue-400 transition cursor-pointer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -531,7 +547,9 @@
           class="flex justify-between pt-3 border-t border-gray-300 text-gray-500 max-sm:flex-col-reverse dark:text-white"
         >
           <div class="flex gap-2">
-            <div class="flex items-center gap-1">
+            <div
+              class="flex items-center gap-1 hover:text-red-500 dark:hover:text-red-400 transition cursor-pointer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -550,7 +568,9 @@
               </svg>
               <span>56</span>
             </div>
-            <div class="flex items-center gap-1">
+            <div
+              class="flex items-center gap-1 hover:text-blue-500 dark:hover:text-blue-400 transition cursor-pointer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -643,7 +663,9 @@
           class="flex justify-between pt-3 border-t border-gray-300 text-gray-500 max-sm:flex-col-reverse dark:text-white"
         >
           <div class="flex gap-2">
-            <div class="flex items-center gap-1">
+            <div
+              class="flex items-center gap-1 hover:text-red-500 dark:hover:text-red-400 transition cursor-pointer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -662,7 +684,9 @@
               </svg>
               <span>56</span>
             </div>
-            <div class="flex items-center gap-1">
+            <div
+              class="flex items-center gap-1 hover:text-blue-500 dark:hover:text-blue-400 transition cursor-pointer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
